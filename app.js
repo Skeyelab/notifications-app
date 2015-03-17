@@ -22,8 +22,7 @@
       '*.changed': function(e) {
         if (e.propertyName == 'ticket.custom_field_' + this.setting('custom_field_for_deal_id'))
           return this.alertOnTopicPresence();
-      },
-      'click .close': 'closeAlert'
+      }
     },
 
     activate: function() {
@@ -65,12 +64,6 @@
         msg = msg + "</div>";
         services.notify(msg, 'error', 60000);
 
-        this.renderPartial('collaborators');
-        this.togglePartial('collaborators');
-      } else {
-        this.closeAlert({
-          currentTarget: 'section.collaborators .alert'
-        });
       }
     },
 
@@ -95,54 +88,12 @@
               msg = msg + '</br><a href="#/users/' + this.ticket().requester().id() + '">' + this.I18n.t('unsolved_tickets.link') + '</a>';
               services.notify(msg, 'error', 60000);
 
-              this.renderPartial('unsolved_tickets', {
-                explanation: this.I18n.t('unsolved_tickets.explanation', {
-                  count: count
-                })
-              });
-              this.togglePartial('unsolved_tickets');
+
             }
           });
       }
     },
 
-    alertOnTopicPresence: function() {
-      /*
-            var deal_id = null;
 
-            if (_.isEmpty(this.setting('custom_field_for_deal_id')) ||
-                _.isEmpty(deal_id = this.ticket().customField('custom_field_' +
-                                                              this.setting('custom_field_for_deal_id')))) { return; }
-
-            this.ajax('fetchTopics', deal_id)
-              .done(function(data){
-                if (data.count < 1)
-                  return;
-
-                this.renderPartial('topics', {
-                  explanation: this.I18n.t('topics.explanation', { deal_id: deal_id}),
-                  deal_id: deal_id,
-                  subdomain: this.currentAccount().subdomain()
-                });
-                this.togglePartial('topics');
-              });
-more unneeded crap
-
-      */
-    },
-
-    closeAlert: function(e) {
-      this.$(e.currentTarget).parent().remove();
-    },
-
-    renderPartial: function(partial, context) {
-      this.$('section.' + partial).html(this.renderTemplate(partial, context));
-    },
-
-    togglePartial: function(partial) {
-      _.times(8, function() {
-        this.$('section.' + partial).fadeToggle('slow');
-      }, this);
-    }
   };
 }());
