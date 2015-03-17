@@ -60,7 +60,7 @@
           console.log(arrayItem.email());
         });
         msg = msg + "</div>";
-        services.notify(msg, 'error', 60000);
+        services.notify(msg, 'alert', 60000);
 
       }
     },
@@ -84,7 +84,7 @@
               msg = "<p style='font-size:11pt;font-weight:bold'>" + msg;
 
               msg = msg + '</br><a href="#/users/' + this.ticket().requester().id() + '">' + this.I18n.t('unsolved_tickets.link') + '</a>';
-              services.notify(msg, 'error', 60000);
+              services.notify(msg, 'alert', 60000);
             }
           });
       }
