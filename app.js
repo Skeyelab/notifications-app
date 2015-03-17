@@ -15,7 +15,7 @@
       }
     },
     events: {
-      'app.activated': 'activate',
+      'app.created': 'activate',
       'ticket.status.changed': 'initializeIfReady',
       'ticket.collaborators.changed': 'alertOnCollaboratorPresence',
       'ticket.requester.email.changed': 'alertOnUnsolvedTicketPresence',
@@ -40,7 +40,6 @@
       if (this.isReady()) {
         this.alertOnCollaboratorPresence();
         this.alertOnUnsolvedTicketPresence();
-        //        this.alertOnTopicPresence();
         this.doneLoading = true;
       }
     },
@@ -60,7 +59,6 @@
           msg = msg + "<li style='font-size:11pt;font-weight:bold'>" + arrayItem.name() + " - " + arrayItem.email();
           console.log(arrayItem.email());
         });
-        //console.log(collaborators.length);
         msg = msg + "</div>";
         services.notify(msg, 'error', 60000);
 
@@ -87,8 +85,6 @@
 
               msg = msg + '</br><a href="#/users/' + this.ticket().requester().id() + '">' + this.I18n.t('unsolved_tickets.link') + '</a>';
               services.notify(msg, 'error', 60000);
-
-
             }
           });
       }
