@@ -1,0 +1,30 @@
+.alert {
+  color: #555;
+  background-color: #FF9900;
+  margin-bottom: 1px;
+}
+
+ul {
+  list-style: circle;
+}
+
+section.topics .alert {
+  background-color: #0AF615;
+  border-color: none;
+}
+
+.apps header .logo{
+display: none;
+}
+
+header h3{
+display: none;
+}
+
+.logo{
+display: none;
+}
+
+h3{
+display: none;
+}

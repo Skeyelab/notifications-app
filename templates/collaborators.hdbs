@@ -1,0 +1,16 @@
+<div class="alert">
+  <button type="button" class="close">&times;</button>
+  <p><strong>{{t "collaborators.explanation"}}</strong></p>
+  <ul>
+    {{#each ticket.collaborators}}
+    <li>
+      <strong>
+        {{this.name}}
+        {{#if this.email}}
+        - {{this.email}}
+        {{/if}}
+      </strong>
+    </li>
+    {{/each}}
+  </ul>
+</div>

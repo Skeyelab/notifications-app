@@ -1,0 +1,11 @@
+<div class="alert">
+  <button type="button" class="close">&times;</button>
+  <p>
+    <strong>
+      {{explanation}}
+    </strong>
+  </p>
+  <p>
+    <a href="#/users/{{ticket.requester.id}}"><strong>{{t "unsolved_tickets.link"}}</strong></a>
+  </p>
+</div>

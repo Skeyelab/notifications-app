@@ -1,0 +1,9 @@
+<div class="alert">
+  <button type="button" class="close">&times;</button>
+  <p>
+    <strong>
+      {{explanation}}
+      <a href="https://{{subdomain}}.zendesk.com/categories/search?query={{deal_id}}" target="_blank">{{t "topics.link"}}</a>.
+    </strong>
+  </p>
+</div>

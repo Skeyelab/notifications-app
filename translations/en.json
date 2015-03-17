@@ -1,0 +1,26 @@
+{
+  "app": {
+    "description":  "Groupon Notifications",
+    "name":         "Groupon Notifications",
+    "parameters": {
+      "custom_field_for_deal_id": {
+        "label": "Deal ID",
+        "helpText": "ID of the custom field representing the DEAL ID."
+      }
+    }
+  },
+
+  "collaborators": {
+    "explanation": "Take note that this ticket has the following CCs:"
+  },
+
+  "unsolved_tickets":{
+    "explanation": "This customer has {{count}} unsolved ticket(s).",
+    "link": "Click here to see unsolved tickets."
+  },
+
+  "topics": {
+    "explanation": "There are Knowledge Base Updates for Deal ID {{deal_id}}.",
+    "link": "Click Here"
+  }
+}

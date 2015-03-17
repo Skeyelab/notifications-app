@@ -1,0 +1,20 @@
+{
+  "name": "Groupon Notifications",
+  "author": {
+    "name": "Pierre Nespo",
+    "email": "pierre.nespo@gmail.com"
+  },
+
+  "defaultLocale": "en",
+  "private": true,
+  "location": ["ticket_sidebar", "new_ticket_sidebar"],
+  "frameworkVersion": "0.5",
+  "noTemplate": true,
+  "parameters": [
+    {
+      "name": "custom_field_for_deal_id",
+      "type": "text",
+      "required": true
+    }
+  ]
+}
