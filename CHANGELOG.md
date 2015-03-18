@@ -1,8 +1,8 @@
 # Change Log
 
-## [Unreleased](https://github.com/Skeyelab/notifications-app/tree/HEAD)
+## [v1.0.1](https://github.com/Skeyelab/notifications-app/tree/v1.0.1) (2015-03-18)
 
-[Full Changelog](https://github.com/Skeyelab/notifications-app/compare/v1.0...HEAD)
+[Full Changelog](https://github.com/Skeyelab/notifications-app/compare/v1.0...v1.0.1)
 
 **Implemented enhancements:**
 
