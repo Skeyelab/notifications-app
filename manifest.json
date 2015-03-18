@@ -8,7 +8,13 @@
   "defaultLocale": "en",
   "private": true,
   "location": ["ticket_sidebar", "new_ticket_sidebar"],
-  "frameworkVersion": "1.0",
-  "version":"0.1.0",
-  "noTemplate": true
+  "frameworkVersion": "0.5",
+
+  "parameters": [
+    {
+      "name": "custom_field_for_deal_id",
+      "type": "text",
+      "required": true
+    }
+  ]
 }
