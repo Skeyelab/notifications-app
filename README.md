@@ -1,1 +1,1 @@
-# Groupon Notifications
+<https://github.com/Skeyelab/notifications-app/issues>
