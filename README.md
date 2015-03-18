@@ -1,4 +1,3 @@
-# Groupon Notifications
-# notifications-app
+[/notifications-app/issues][1]
 
-</notifications-app/issues>
+[1]: </notifications-app/issues>
